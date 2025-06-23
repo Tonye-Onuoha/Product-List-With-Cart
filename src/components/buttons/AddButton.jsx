@@ -1,8 +1,28 @@
+import { useContext } from "react";
+import { OrdersContext, DessertContext } from "../../Context";
+import { orderIdGenerator } from "../../utils";
 import cartAddIcon from "../../assets/images/icon-add-to-cart.svg";
+import { selectedProductsStore } from "../../store";
 
-export default function AddButton() {
+export default function AddButton({ itemCount }) {
+    const { handleOrders } = useContext(OrdersContext);
+    const dessert = useContext(DessertContext);
+
+    function handleClick() {
+        const itemPrice = itemCount * dessert.price;
+        const order = {
+            id: orderIdGenerator(),
+            category: dessert.category,
+            name: dessert.name,
+            price: dessert.price,
+            quantity: itemCount,
+            cost: itemPrice
+        };
+        selectedProductsStore.add(dessert.category); // add the category of the selected product to the global store.
+        handleOrders(order); // create a new order.
+    }
     return (
-        <div className="button add-button">
+        <div className="button add-button" onClick={handleClick}>
             <img src={cartAddIcon}></img>
             <p className="add-button__text">Add to Cart</p>
         </div>
