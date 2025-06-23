@@ -1,5 +1,4 @@
 import { confirmedOrderClass } from "../utils";
-
 import icon from "../assets/images/image-waffle-thumbnail.jpg";
 
 export default function ConfirmedItem({ item }) {
