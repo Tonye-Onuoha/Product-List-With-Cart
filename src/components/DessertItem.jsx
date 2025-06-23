@@ -1,13 +1,17 @@
 import DessertImage from "./DessertImage";
-import DessertButton from "./DessertButton";
 import DessertInfo from "./DessertInfo";
+import { DessertContext } from "../Context";
+import { selectedProductsStore } from "../store";
 
-export default function DessertItem() {
+export default function DessertItem({ dessert }) {
+    const isSelected = selectedProductsStore.has(dessert.category);
+
     return (
         <div className="dessert-item">
-            <DessertImage />
-            <DessertButton />
-            <DessertInfo />
+            <DessertContext value={dessert}>
+                <DessertImage isSelected={isSelected} />
+                <DessertInfo />
+            </DessertContext>
         </div>
     );
 }

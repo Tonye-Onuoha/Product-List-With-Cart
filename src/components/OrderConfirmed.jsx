@@ -1,5 +1,5 @@
-import confirmedIcon from "../assets/images/icon-order-confirmed.svg";
 import ConfirmedItem from "./ConfirmedItem";
+import confirmedIcon from "../assets/images/icon-order-confirmed.svg";
 
 export default function OrderConfirmed({ orders, orderTotal, onNewOrder }) {
     return (

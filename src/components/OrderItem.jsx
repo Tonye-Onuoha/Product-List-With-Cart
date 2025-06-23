@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { OrdersContext } from "./Context";
+import { OrdersContext } from "../Context";
 import removeItemIcon from "../assets/images/close-circle-outline.svg";
 import { selectedProductsStore } from "../store";
 
