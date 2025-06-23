@@ -17,6 +17,7 @@ export default function Desserts() {
                     setLoading(false);
                 }
             } catch (err) {
+                console.log(err.message);
                 setError("Sorry, unable to fetch desserts at the moment.");
                 setLoading(false);
             }
