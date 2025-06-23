@@ -10,7 +10,7 @@ export default function Desserts() {
         let ignore = false;
         async function fetchDesserts() {
             try {
-                const response = await fetch("http://localhost:5173/data.json");
+                const response = await fetch("https://product-list-with-cart-gray.vercel.app/data.json");
                 const data = await response.json();
                 if (!ignore) {
                     setDesserts(data);
