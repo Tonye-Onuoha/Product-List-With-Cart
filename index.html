@@ -5,9 +5,37 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + React</title>
+    <style>
+      @font-face {
+        font-family: Red-Hat-Text;
+        src: url("./src/assets/fonts/RedHatText-VariableFont_wght.ttf");
+      }
+      .attribution {
+        font-family: Red-Hat-Text;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 11px;
+        text-align: center;
+        color: #ffffff;
+        background-color: #000000;
+      }
+      .attribution a {
+        color: hsl(14, 86%, 42%);
+      }
+    </style>
   </head>
   <body>
-    <div id="root"></div>
+    <main>
+      <div id="root"></div>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"><b>Frontend Mentor</b></a
+        >. Coded by <a href="https://github.com/Tonye-Onuoha"><b>Tonye Hugo Onuoha</b></a
+        >.
+      </div>
+    </footer>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
