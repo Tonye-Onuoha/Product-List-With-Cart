@@ -21,6 +21,20 @@ main {
   padding: 20px;
 }
 
+.loading-text {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #434343;
+}
+
+.error-text {
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: maroon;
+}
+
 .product-list {
   max-width: 1440px;
   margin: 0 auto;

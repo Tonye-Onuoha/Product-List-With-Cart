@@ -50,7 +50,7 @@ export default function Desserts() {
                     backgroundColor: "lightgray",
                     borderRadius: "10px"
                 }}>
-                <h2 className="loading-text">{error}</h2>
+                <h2 className="error-text">{error}</h2>
             </div>
         );
     }
