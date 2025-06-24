@@ -10,14 +10,13 @@ export default function Desserts() {
         let ignore = false;
         async function fetchDesserts() {
             try {
-                const response = await fetch("../../data.json");
+                const response = await fetch("./data.json");
                 const data = await response.json();
                 if (!ignore) {
                     setDesserts(data);
                     setLoading(false);
                 }
             } catch (err) {
-                console.log(err.message);
                 setError("Sorry, unable to fetch desserts at the moment.");
                 setLoading(false);
             }
