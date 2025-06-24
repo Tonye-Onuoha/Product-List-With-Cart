@@ -9,11 +9,11 @@ export default function OrderButton({ itemCount, onDecrementClick, onIncrementCl
                 onClick={onDecrementClick}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";
-                    e.currentTarget.src = "./src/assets/images/remove-circle-outline-hover.svg";
+                    e.currentTarget.src = "./assets/remove-circle-outline-hover.svg";
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.cursor = "default";
-                    e.currentTarget.src = "./src/assets/images/remove-circle-outline.svg";
+                    e.currentTarget.src = "./assets/remove-circle-outline.svg";
                 }}></img>
             <span className="order-button__item-count">{itemCount}</span>
             <img
@@ -21,11 +21,11 @@ export default function OrderButton({ itemCount, onDecrementClick, onIncrementCl
                 onClick={onIncrementClick}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";
-                    e.currentTarget.src = "./src/assets/images/add-circle-outline-hover.svg";
+                    e.currentTarget.src = "./assets/add-circle-outline-hover.svg";
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.cursor = "default";
-                    e.currentTarget.src = "./src/assets/images/add-circle-outline.svg";
+                    e.currentTarget.src = "./assets/add-circle-outline.svg";
                 }}></img>
         </div>
     );

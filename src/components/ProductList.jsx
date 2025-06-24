@@ -50,9 +50,9 @@ export default function ProductList() {
                 <OrdersContext
                     value={{
                         orders: orders,
-                        removeOrder: removeOrder,
                         handleOrders: handleOrders,
                         UpdateOrders: UpdateOrders,
+                        removeOrder: removeOrder,
                         handleConfirmOrder: handleConfirmOrder
                     }}>
                     <Desserts />

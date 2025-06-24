@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { OrdersContext, DessertContext } from "../../Context";
-import { orderIdGenerator } from "../../utils";
 import cartAddIcon from "../../assets/images/icon-add-to-cart.svg";
+import { orderIdGenerator } from "../../utils";
 import { selectedProductsStore } from "../../store";
 
 export default function AddButton({ itemCount }) {

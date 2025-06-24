@@ -26,11 +26,11 @@ export default function OrderItem({ order }) {
                 onClick={handleRemoveOrder}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";
-                    e.currentTarget.src = "./src/assets/images/close-circle-outline-hover.svg";
+                    e.currentTarget.src = "./assets/close-circle-outline-hover.svg";
                 }}
                 onMouseLeave={(e) => {
                     e.currentTarget.style.cursor = "default";
-                    e.currentTarget.src = "./src/assets/images/close-circle-outline.svg";
+                    e.currentTarget.src = "./assets/close-circle-outline.svg";
                 }}></img>
         </div>
     );
