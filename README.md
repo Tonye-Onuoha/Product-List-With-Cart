@@ -24,7 +24,7 @@ This is a React + Vite project in which the main objective is to build out a "Pr
 
 ### Links
 
--   Live Site URL: [Vercel](https://product-list-with-cart-gray.vercel.app)
+-   Live Site URL: [Vercel](https://product-list-with-cart-five-neon.vercel.app)
 
 ## My process
 
