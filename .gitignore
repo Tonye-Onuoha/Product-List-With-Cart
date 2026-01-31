@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 *phcode.json
 style-guide.md
+
+.vercel
