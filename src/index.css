@@ -390,6 +390,8 @@ main {
   background-color: hsl(14, 65%, 9%);
 }
 
+/* MEDIA QUERIES */
+
 @media screen and (min-width: 450px) {
   main {
     padding: 75px;
