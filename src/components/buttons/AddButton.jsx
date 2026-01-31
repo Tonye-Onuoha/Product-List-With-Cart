@@ -23,7 +23,7 @@ export default function AddButton({ itemCount }) {
     }
     return (
         <div className="button add-button" onClick={handleClick}>
-            <img src={cartAddIcon}></img>
+            <img src={cartAddIcon} alt="cart icon"></img>
             <p className="add-button__text">Add to Cart</p>
         </div>
     );

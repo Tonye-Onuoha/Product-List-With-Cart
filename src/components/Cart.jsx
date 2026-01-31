@@ -11,7 +11,7 @@ export default function Cart({ orders, cartTotal, orderTotal }) {
             <h2 className="cart__heading">Your Cart ({cartTotal})</h2>
             {cartTotal === 0 && (
                 <div className="cart__empty-content">
-                    <img src={emptyCartImage}></img>
+                    <img src={emptyCartImage} alt="empty cart illustration"></img>
                     <p className="cart__text">Your added items will appear here</p>
                 </div>
             )}
@@ -23,7 +23,7 @@ export default function Cart({ orders, cartTotal, orderTotal }) {
                         <h1 className="order-total__cost">${orderTotal.toFixed(2)}</h1>
                     </div>
                     <div className="carbon-neutral">
-                        <img src={carbonNeutralImage}></img>
+                        <img src={carbonNeutralImage} alt="tree icon"></img>
                         <p>
                             This is a <span className="carbon-neutral__text">carbon neutral</span> delivery
                         </p>

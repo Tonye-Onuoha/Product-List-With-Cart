@@ -23,6 +23,7 @@ export default function OrderItem({ order }) {
             </div>
             <img
                 src={removeItemIcon}
+                alt="delete icon"
                 onClick={handleRemoveOrder}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";

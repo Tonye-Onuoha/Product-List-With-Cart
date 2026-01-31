@@ -6,6 +6,7 @@ export default function OrderButton({ itemCount, onDecrementClick, onIncrementCl
         <div className="button order-button">
             <img
                 src={decrementIcon}
+                alt="decrement minus-icon"
                 onClick={onDecrementClick}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";
@@ -18,6 +19,7 @@ export default function OrderButton({ itemCount, onDecrementClick, onIncrementCl
             <span className="order-button__item-count">{itemCount}</span>
             <img
                 src={incrementIcon}
+                alt="increment plus-icon"
                 onClick={onIncrementClick}
                 onMouseEnter={(e) => {
                     e.currentTarget.style.cursor = "pointer";
